@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visuals</title>
+    <link rel="stylesheet" href="sortingVisuals.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div>Sorting Visualizer</div>
+            <div class="control-container">
+                <div class="slider">
+                    <label for="speed">Speed</label>
+                    <input id="speed" type="range" min="5" max="25" value="5">
+                </div>
+                <div class="slider">
+                    <label for="size">Size</label>
+                    <input id="size" type="range" min="5" max="25" value="5" onchange="randomise()">
+                </div>
+                <div>
+                    <select class="type-btn">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="quick">Quick Sort</option>
+                        <option value="merge">Merge Sort</option>
+                    </select>
+                </div>
+                <div>
+                    <button class='glowing-btn' onclick="randomise()"><span class='glowing-txt'>R<span class='faulty-letter'>A</span>NDOMISE</span></button>
+                </div>
+                <div>
+                    <button class='glowing-btn'><span class='glowing-txt' onclick="Sort()">S<span class='faulty-letter'>O</span>RT</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div id="bar-container">
+    
+            </div>
+        </div>
+    </div>
+    <script src="sortingVisuals.js"></script>
+</body>
+</html>
