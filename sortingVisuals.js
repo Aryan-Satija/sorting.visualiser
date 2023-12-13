@@ -26,7 +26,7 @@ function beep(freq){
     node.connect(audioCtx.destination);
 }
 async function randomise(){
-    let n = 5*sizeSlider.value;
+    let n = 2*sizeSlider.value; // 
     barContainer.style.width = `${(20*n - 10)}px`;
     arr = [];
     for(let i = 0; i < n; i++){
@@ -53,7 +53,7 @@ async function displayBarsInit(){
     }
 }
 function displayBars(){
-    let n = 5*sizeSlider.value;
+    let n = 2*sizeSlider.value; // 
     barContainer.innerHTML="";
     const fragment = document.createDocumentFragment();
     for(let i = 0; i < n; i++){
@@ -68,7 +68,7 @@ function displayBars(){
 }
 
 async function bubbleSort(speed) {
-    let n = 5*sizeSlider.value;
+    let n = 2*sizeSlider.value; // 
     let bars = document.getElementsByClassName('bar');
     for (let i = n - 1; i >= 0; i--) {
         for (let j = 0; j < i; j++) {
@@ -101,7 +101,7 @@ async function bubbleSort(speed) {
 }
 async function insertionSort(speed){
     let bars = document.getElementsByClassName('bar');
-    let n = 5*sizeSlider.value;
+    let n = 2*sizeSlider.value; //
     for(let i = 1; i < n; i++){
         let num = arr[i];
         let j = i - 1;
@@ -138,7 +138,7 @@ async function insertionSort(speed){
 }
 async function selectionSort(speed) {
     let bars = document.getElementsByClassName('bar');
-    let n = 5*sizeSlider.value;
+    let n = 2*sizeSlider.value; //
     for(let i = 0; i < n; i++)
     {
         let min = i;
@@ -302,8 +302,8 @@ function Sort(){
     else if(sortType.value=="selection")
         selectionSort(speed);
     else if(sortType.value=="quick")
-        quickSort(0, ((5*sizeSlider.value)-1), document.getElementsByClassName('bar'), speed);
-    else
-        mergeSort(0, ((5*sizeSlider.value)-1), document.getElementsByClassName('bar'), speed);
+        quickSort(0, ((2*sizeSlider.value)-1), document.getElementsByClassName('bar'), speed); //
+    else 
+        mergeSort(0, ((2*sizeSlider.value)-1), document.getElementsByClassName('bar'), speed); //
 }
 randomise();

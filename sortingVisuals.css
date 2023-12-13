@@ -56,8 +56,8 @@
     perspective: 2em;
     font-weight: bold;
     letter-spacing: 1em;
-    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-      0px 0px 0.5em 0px var(--glow-color);
+    /* box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color); */
     animation: border-flicker 2s linear infinite;
 }
 .type-btn option{
@@ -80,8 +80,6 @@
 }
 .bar-blue{
     background-color: var(--glow-color);
-    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
 }
 .bar-green{
     background-color: #0fff50;
@@ -113,8 +111,8 @@
     perspective: 2em;
     font-weight: bold;
     letter-spacing: 1em;
-    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-      0px 0px 0.5em 0px var(--glow-color);
+    /* box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color); */
     animation: border-flicker 2s linear infinite;
 }
   
